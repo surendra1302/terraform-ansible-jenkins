@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/surendra1302/terraform-ansible-jenkins.git'
+                git branch: 'main', url: 'https://github.com/surendra1302/terraform-ansible-jenkins.git'
             }
         }
 
